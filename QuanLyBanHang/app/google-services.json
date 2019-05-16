@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "301995425356",
+    "firebase_url": "https://qlbh-fcm.firebaseio.com",
+    "project_id": "qlbh-fcm",
+    "storage_bucket": "qlbh-fcm.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:301995425356:android:6b1142fac1f72ca2",
+        "android_client_info": {
+          "package_name": "vn.edu.vtn.quanlybanhang"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "301995425356-lgcseuesnvtscn5rs2v5fgtgkk4le0gq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAWZIscbtS330vSTlJALoe8Nyk4XydwTsE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

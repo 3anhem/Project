@@ -1,0 +1,31 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="47dp"
+    android:layout_height="47dp"
+    android:clipToPadding="false"
+    android:focusable="true">
+    >
+
+    <ImageView
+        android:id="@+id/imgCart"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_centerInParent="true"
+
+        android:src="@drawable/cart_48px" />
+
+    <TextView
+        android:id="@+id/txtCart_badge"
+        android:layout_width="17dp"
+        android:layout_height="17dp"
+        android:layout_alignEnd="@+id/imgCart"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="-8dp"
+        android:background="@drawable/badge_background"
+        android:text="0"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textSize="12dp" />
+
+
+</RelativeLayout>

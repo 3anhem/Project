@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/home"
+            android:title="Trang chủ" />
+        <item
+            android:id="@+id/nav_list"
+            android:icon="@drawable/list"
+            android:title="Danh mục sản phẩm" />
+
+        <item
+            android:id="@+id/nav_oder"
+            android:icon="@drawable/oder"
+            android:title="Quản lý đơn hàng" />
+        <item
+            android:id="@+id/nav_like"
+            android:icon="@drawable/like"
+            android:title="Sản phẩm yêu thích" />
+
+        <item
+            android:id="@+id/nav_user"
+            android:icon="@drawable/user"
+            android:title="Quản lý tài khoản" />
+        <item
+            android:id="@+id/nav_notification"
+            android:icon="@drawable/notification"
+            android:title="Thông báo của tôi" />
+    </group>
+
+    <item android:title="HỔ TRỢ">
+        <menu>
+            <item
+                android:id="@+id/nav_support"
+                android:title="HOT LINE: 0971.434.398 (Gặp Việt)" />
+            <item
+                android:id="@+id/nav_setup"
+                android:title="Cài đặt" />
+        </menu>
+    </item>
+
+</menu>

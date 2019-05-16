@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/imgProductImage"
+            android:layout_width="135dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/rsz_m20" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/imgDelete"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_alignParentEnd="true"
+                android:layout_gravity="right"
+                android:src="@drawable/delete_cart" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txtProductName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="19dp"
+                    android:ellipsize="end"
+                    android:maxLines="2"
+                    android:text="Điện thoại Samsung Galaxsdsdsdsdsdsy M20"
+                    android:textColor="@color/black_mini"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/txtProductSalePrice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:text="4.900.000 đ"
+                    android:textColor="@android:color/holo_red_light"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:typeface="serif" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <!--<TextView-->
+                    <!--android:layout_width="80dp"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginTop="10dp"-->
+                    <!--android:height="2dp"-->
+                    <!--android:background="@color/gray_list_product" />-->
+
+                    <TextView
+                        android:id="@+id/txtProductPrice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/strike"
+                        android:text="3.399.0000 đ"
+                        android:textSize="14sp" />
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/gray_mini">
+
+                    <Button
+                        android:id="@+id/btnMinus"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:background="@drawable/minuss" />
+
+                    <TextView
+                        android:id="@+id/txtQuantity"
+                        android:layout_width="30dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="1" />
+
+
+                    <Button
+                        android:id="@+id/btnPlus"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:background="@drawable/pluss" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray_address" />
+
+
+</LinearLayout>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="vn.edu.vtn.quanlybanhang">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true"
+        tools:replace="android:allowBackup">
+        <activity android:name=".profile.addressbooks.AddressBooksActivity"></activity>
+        <activity android:name=".pay.updateAdress.UpdateAdressActivity" />
+
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_channel_id"
+            android:value="@string/default_notification_channel_id" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@drawable/icon_notification" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@android:color/holo_red_dark" />
+
+        <activity android:name=".profiledetail.ProfileDetailActivity" />
+        <activity android:name=".productbilldetail.ProductBillDetailActivity" />
+        <activity android:name=".main.MainActivity" />
+        <activity
+            android:name=".splash.SplashActivity"
+            android:label="@string/title_activity_main"
+            android:theme="@style/SplashScreenTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".signup.SignUpActivity" />
+        <activity android:name=".login.LoginActivity" />
+        <activity android:name=".profile.ProfileActivity" />
+        <activity android:name=".productdetail.ProductDetailActivity" />
+        <activity android:name=".cart.CartActivity" />
+        <activity android:name=".pay.PayActivity" />
+        <activity android:name=".pay.newAddress.NewAddressActivity" />
+        <activity
+            android:name=".util.ProgressDialogF"
+            android:label="@string/title_activity_test" />
+
+        <service android:name=".util.fcm.MyFireBaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name=".util.fcm.MyFireBaseIDService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+    </application>
+
+</manifest>

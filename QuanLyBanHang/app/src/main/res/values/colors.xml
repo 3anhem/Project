@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="white">#FFFFFF</color>
+    <color name="signupColor">#066e8a</color>
+    <color name="gray">#f9f9f9</color>
+    <color name="FDF5EA">#fff5e7</color>
+    <color name="EEF5FD">#e6f2ff</color>
+    <color name="black_mini">#383838</color>
+    <color name="gray_list_product">#b6b6b6</color>
+    <color name="gray_mini">#f2f2f2</color>
+    <color name="green">#34692f</color>
+    <color name="gray_cart">#E0E0E0</color>
+    <color name="gray_address">#E2E2E2</color>
+    <color name="gray_item_product">#F3F3F3</color>
+    <color name="black">#000000</color>
+
+    <color name="gray_pay_form">#FAFAFA</color>
+    <color name="gray_pay_form1">#e6e6e6</color>
+    <color name="add_new_address">#00a6ff</color>
+
+    <color name="black_effective">#2a2a2a</color>
+
+
+</resources>

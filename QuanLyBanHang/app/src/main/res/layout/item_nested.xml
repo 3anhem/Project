@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/linearList"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="5dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/itemTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="10dp"
+            android:layout_toStartOf="@+id/txtMore"
+            android:text="Sample title"
+            android:textColor="@android:color/black"
+            android:textSize="18sp" />
+
+        <!--<Button-->
+        <!--android:id="@+id/btnMore"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="42dp"-->
+        <!--android:layout_alignParentEnd="true"-->
+        <!--android:layout_centerVertical="true"-->
+        <!--android:background="@android:color/holo_blue_light"-->
+        <!--android:text="more"-->
+        <!--android:textColor="#FFF" />-->
+
+        <TextView
+            android:id="@+id/txtMore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="6dp"
+            android:background="@color/white"
+            android:drawableEnd="@drawable/img_more"
+            android:text="Xem tất cả "
+            android:textColor="@android:color/holo_blue_light"
+            android:textSize="14sp" />
+
+
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_view_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:orientation="horizontal" />
+
+</LinearLayout>

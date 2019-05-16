@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/darker_gray"
+    android:orientation="vertical"
+    tools:context=".productdetail.ProductDetailActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/rlOne"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center">
+
+                    <!--<ImageView-->
+                    <!--android:id="@+id/imgProductHide"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="300dp"-->
+                    <!--android:layout_centerHorizontal="true" />-->
+
+                    <ImageView
+                        android:id="@+id/imgProduct"
+                        android:layout_width="wrap_content"
+                        android:layout_height="300dp"
+                        android:layout_centerHorizontal="true" />
+
+                    <ImageView
+                        android:id="@+id/imgProductHide"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_alignParentBottom="true"
+                        android:visibility="gone" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/imgProduct">
+
+                        <TextView
+                            android:id="@+id/txtProductName"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Nồi chiên không dầu"
+                            android:textColor="@android:color/black"
+                            android:textSize="15sp" />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/txtProductName">
+
+                            <TextView
+                                android:id="@+id/txtProductSalePrice"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="3.399.0000 đ"
+                                android:textColor="@android:color/holo_red_light"
+                                android:textSize="20sp" />
+
+
+                            <TextView
+                                android:id="@+id/txtProductPrice"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignBottom="@+id/txtProductSalePrice"
+                                android:layout_marginStart="21dp"
+                                android:layout_marginBottom="2dp"
+                                android:layout_toEndOf="@+id/txtProductSalePrice"
+                                android:background="@drawable/strike"
+                                android:text="3.399.0000 đ"
+                                android:textSize="15sp" />
+
+                            <TextView
+                                android:id="@+id/txtPercent"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginStart="10dp"
+                                android:layout_marginTop="10dp"
+                                android:layout_toEndOf="@id/txtProductPrice"
+                                android:text="-32%"
+                                android:textColor="@android:color/black"
+                                android:textSize="15dp" />
+
+                        </RelativeLayout>
+                    </RelativeLayout>
+                </RelativeLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/btnAddCart"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_weight="1"
+                        android:background="@android:color/holo_orange_dark"
+                        android:text="Thêm vào giỏ hàng"
+                        android:textColor="@color/white" />
+
+                    <Button
+                        android:id="@+id/btnBuy"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_weight="1"
+                        android:background="@android:color/holo_red_light"
+                        android:text="Chọn mua"
+                        android:textColor="@color/white" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:height="7dp"
+                android:background="@color/gray" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginBottom="-40dp"
+                    android:text="Quyền lợi khách hàng"
+                    android:textColor="@android:color/black"
+                    android:textSize="20sp" />
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginTop="35dp"
+                    android:background="@drawable/check" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="37dp"
+                    android:layout_marginTop="40dp"
+                    android:text="Hoàn tiền 1000% nếu phát hiện hàng giả"
+                    android:textColor="@color/black_mini"
+                    android:textSize="15dp" />
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginTop="70dp"
+                    android:background="@drawable/check" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="35dp"
+                    android:layout_marginTop="110dp"
+                    android:drawablePadding="5dp"
+                    android:text="Cam kết hàng chính hãng"
+                    android:textColor="@color/black_mini"
+                    android:textSize="15dp" />
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginTop="105dp"
+                    android:background="@drawable/check" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="35dp"
+                    android:layout_marginTop="75dp"
+                    android:drawablePadding="5dp"
+                    android:text="Thời gian bảo hàng 12 tháng"
+                    android:textColor="@color/black_mini"
+                    android:textSize="15dp" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:height="7dp"
+                android:background="@color/gray" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Mô tả sản phẩm"
+                    android:textColor="@android:color/black"
+                    android:textSize="20sp" />
+
+                <!--<TextView-->
+                <!--android:id="@+id/txtDescrip"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:text="【CHUYÊN MỤC 】【NHÓM CÓ THỂ GIÚP GÌ CHO BẠN?】 【TUẦN 1 】 Hi ACE! Mình xin mở bát topic đầu tiên của chuyên mục này, Chuyên mục này lập ra là để giải đáp nhanh những vấn đề câu hỏi và vì sao có chuyên mục này?  1. Giải đáp nhanh vì ai biết cũng có thể vào giải đáp, không nhất thiết phải BQT. 2. Tổng hợp các câu hỏi nhỏ để tránh làm loãng nhóm, chừa chỗ để load các bài share tài liệu hay cũng như những bài thảo luận kiến thức. Bài này sẽ ghim trong vòng 1 tuần, và tuần tiếp theo sẽ là post mới kèm theo link topic tuần này :D Song song là topic tư vấn phần cứng và Sao lưu của Lê Tá : " />-->
+                <WebView
+                    android:id="@+id/wvDes"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                </WebView>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </android.support.v4.widget.NestedScrollView>
+
+
+</LinearLayout>
