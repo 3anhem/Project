@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">TourDuLich</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="title_customer">Customer</string>
+    <string name="title_tour">Tour</string>
+    <string name="title_bill">Bill</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="customer">Khách hàng</string>
+    <string name="add">Thêm</string>
+    <string name="logout">Đăng xuất</string>
+    <string name="list_customer">Danh sách khách hàng</string>
+</resources>
